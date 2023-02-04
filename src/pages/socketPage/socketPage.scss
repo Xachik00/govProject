@@ -1,0 +1,178 @@
+.socketPage{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@mixin header {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #2C3034;
+  }
+  
+  @mixin headerContainer {
+   max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+  }
+  
+  @mixin headerContainerH5 {
+    margin-left: 13px;
+    font-size: 18px;
+    font-family: "Arian AMU";
+    line-height: 21px;
+    ont-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+  }
+  
+  @mixin headerContainerH6 {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-left: 12px;
+  }
+  
+  .header {
+    @include header;
+  }
+  
+  .headerContainer {
+    @include headerContainer;
+  
+    div {
+      display: flex;
+      align-items: center;
+    }
+  
+    .headerVectorPart {
+      width: 120px
+    }
+  
+    h5 {
+      @include headerContainerH5
+    }
+  
+    h6 {
+      @include headerContainerH6;
+    }
+  }
+  .headerVectorPart:hover{
+    cursor: pointer;
+  }
+  .headerGerbPart{
+
+
+    img{
+        width: 52px;
+    }
+  }
+
+
+.socket{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    margin-top: -70px;
+    width: 100%;
+    height: 196px;
+    text-align: center;
+
+    img {
+        width: 300px;
+        height: 194px;
+    }
+}
+
+.txt {
+    width: 100%;
+    font-family: 'Arian AMU';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 36px;
+    margin-top: -34px;
+}
+
+@media (max-width:760px) {
+    #txt {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:605px) {
+    #txt {
+        font-size: 35px;
+    }
+}
+
+@media (max-width:320px) and (min-width:480px) {
+    #txt {
+        font-size: 30xp;
+    }
+
+    #logo {
+        width: 100%;
+
+        img {
+            width: 163px;
+            height: 154px;
+        }
+    }
+}
+
+@media (max-width:891px) and (min-width:769px) {
+    #headerContainerH5 {
+      font-size: 18px;
+    }
+  
+    #headerContainerH6 {
+      font-size: 14px;
+      margin: 8px;
+    }
+  }
+  
+  @media (max-width:769px) and (min-width:646px) {
+    #headerContainerH5 {
+      font-size: 18px;
+    }
+  
+    #headerContainerH6 {
+      font-size: 12px;
+      margin: 8px;
+    }
+  
+    .headerContainer {
+      height: 60px;
+    }
+  
+  }
+  
+  @media (max-width:646px) {
+    #headerContainerH5 {
+      font-size: 12px;
+    }
+  
+    #headerContainerH6 {
+      font-size: 12px;
+      margin: 8px;
+    }
+  
+    .headerContainer {
+      height: 60px;
+    }
+  }
